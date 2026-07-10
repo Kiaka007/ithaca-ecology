@@ -1,0 +1,36 @@
+# ============================
+# ithaca-ecology .gitignore
+# ============================
+
+# Personal content — never publish
+*.mp4
+*.mov
+
+# Environment / credentials
+.env
+.arcane_location
+*.key
+*.secret
+
+# Cache directories
+.cache/
+**/.cache/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+.nvim/
+
+# System
+Thumbs.db

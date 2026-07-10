@@ -1,0 +1,173 @@
+==================================================================
+                            BASH SPELLBOOK
+==================================================================
+
+touch = Make file
+pwd = print working directory
+ls  -a(all)
+    - l(long format)
+    - t(ordered by time)
+which = which path command or var is in
+head = print first X lines
+tail = print last X lines
+wc = word count
+cp = copy (source_file destination_file/dir)
+mv = move (also renames)
+rm = remove
+    -r all children
+env = will list env VAR
+export VAR="value" = exports and sets an env variable
+cat = view file contents
+
+
+==================================================================
+                            TMUX SHORTCUTS
+    https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+==================================================================
+
+SESSIONS
+tmux = starts a session
+tmux new -s NAME starts it with NAME
+tmux ls = lists current sessions
+^b d = detach session
+tmux a = attaches last session (-t allows oyu to specify session)
+tmux kill-session = kills active sessions (-t target a specific session, -a all)
+tmux kill-server = kills all sessions and the tmux server
+
+WINDOWS
+Must press ^b then release before internal commands
+c = creates new window
+^d = terminate window
+N = go to Nth window
+p = go to prev window
+n = go to next window
+, = rename current window
+w = lists current windows
+
+PANES
+" = split pane horz
+% = split pane vert
+^b <direction> = move to pane in that direction
+z = zoom for current pane
+[space] = cycle through pane arrangements
+
+
+==================================================================
+                            VIM KEYBINDS
+==================================================================
+n = Normal mode
+i = Insert mode
+R = Replace text
+v = Visual mode word
+V = Visual mode line
+^V = Visual block mode
+: = Command line mode
+
+CHARACTER
+f{char} F{char} = find/foward char
+t{char} T{char} = backward
+
+WORDS
+w = next word
+b = back beginning of word
+e = end of word
+
+LINE
+0 = beginning of line
+^ = first non-blank char
+$ = end of line
+:{#}enter = line #
+#G = line #
+
+SCREEN
+H = top of screen
+M = middle of screen
+L = bottom of screen
+
+FILE
+gg = beginning of file
+G = end of file
+
+SEARCH
+/{regex}, n/N = search and n's for navigating matches
+
+y = Yank
+p = Paste
+x = Remove
+u = undo
+o/O = insert line below/above
+dw = delete word
+d$ = delete to end of line
+d0 = delete to beginning of line
+s = substitute char
+d/c (visual mode) = delete or change
+~ = flips case
+J = joins lines together
+
+==================================================================
+                            SEARCH
+==================================================================
+
+grep = search (case sensitive)
+    -i insensitive to case
+    -R output filename
+    -RI no lines just files
+find = find under criteria
+mawk = parses instead of replaces
+sed = find and replace (stream editor)
+    Ex. sed 's/snow/rain' file.txt => substitute snow with rain in file.txt
+        s/_/_/g => g works on all instances on file
+        -; = overwrites instances on file
+sort = orders input alphabetically
+uniq = filters adjacent duplicates
+
+
+==================================================================
+                            PERMISSIONS
+==================================================================
+Ex. _rwxrwxrwx 1 owner:group
+
+_special rule
+    -d directory perm
+    -l file perm
+    -s set uID perm
+r = read
+w = write
+x = execute
+rwx(owner) rwx(group) rwx(all users) 1(# of links) owner:group(owner group assigned
+format)
+
+chmod = how you change perm
+u = owner
+g =group
+o = others
+a = all users
+Ex. chmod a -rw file (remove read write from all users on file)
+
+chown = change owner
+Ex. chown owner:group filename
+
+
+==================================================================
+                            SIGILS
+==================================================================
+* = # of any
+** = recursive
+? = exactly 1 of any
+{} = expand , list into multiple args
+$0 = name of program
+$1 = first arg, .. etc
+$@ = all args
+$# = # of args
+2> = standard error
+&> = standard error and standard output
+$? = holds exit status
+    0 - Pass
+    1 - Fail
+&& = runs next if Pass
+|| = runs next if Fail
+[[_]] = tests if true
+> redirects output to a file
+>> redirects and appends output to file
+< takes input from right and puts to left
+| pipes left output to right (however both commands run simultaneously)

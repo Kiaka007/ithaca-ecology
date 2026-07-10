@@ -1,0 +1,18 @@
+community: [Domain Name]
+created: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+description: >
+  [What defines this domain and why you track it]
+
+contacts:
+  - name: [Institution, Publication, or Thought-Leader Name]
+    type: individual | organization | institution | publication | community
+    url: https://example.com
+    alignment: 1-5   # priority weight for lookup/citation order
+    why_track: >
+      [Brief note on relevance]
+    areas:
+      - [tag1]
+      - [tag2]
+    known_contact: [Name]   # optional — only if a named person in
+                             # people.yaml is the reason you track this

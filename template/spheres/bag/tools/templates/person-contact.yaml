@@ -1,0 +1,15 @@
+name: [Full Name]
+aliases: []                    # nicknames/alternate names, for disambiguation
+circles: []                    # ties back to sources/<circle>.yaml naming
+relationship_type: friend | collaborator | colleague | family | mentor | acquaintance
+context: >
+  [Who they are / how you know them — the disambiguation anchor]
+last_contact:                  # YYYY-MM-DD, lightweight only — no history
+                                # log here; that lives in .memory/relationships.md
+notes: >
+  [Current standing impression, freeform]
+caution: >
+  [Optional — only fill in if something's worth flagging]
+contact:
+  url:
+  instagram:
