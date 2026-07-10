@@ -10,7 +10,7 @@ Ithaca is a filesystem structure built in Linux that combines principles of Cont
 
 ## The Problem
 
-When you limit AI agent use to a single chat thread whose backend you do not control, you hit a ceiling. You load it with context. It starts to fixate, misses the mark, and loops. More context in these cases doesn't help and often makes it worse.
+When you limit AI agent use to a single chat thread whose backend you do not control, you hit a ceiling. You load it with context. It starts to fixate, misses the mark, and loops.
 
 In these cases the issue isn't the prompt. It's that there's no clear brief between you and the agent. The agent is operating under boundaries that you cannot see or control. Boundaries that can lead to no tangible sense of defined scope, role, or orientation.
 
