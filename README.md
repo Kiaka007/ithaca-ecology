@@ -144,4 +144,4 @@ Documentation and templates: [CC BY 4.0](LICENSE-CC)
 
 ## About
 
-Designed and built by [Kyoko Eng](https://github.com/kyokoeng) as an experiment in brief-level human-AI interaction. Presented at OpenMined Retreat, April 2026.
+Designed and built by [Kyoko Eng](https://github.com/Kiaka007) as an experiment in brief-level human-AI interaction. Presented at OpenMined Retreat, April 2026.
