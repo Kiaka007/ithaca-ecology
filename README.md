@@ -14,7 +14,7 @@ When you limit AI agent use to a single chat thread whose backend you do not con
 
 In these cases the issue isn't the prompt. It's that there's no clear brief between you and the agent. The agent is operating under boundaries that you cannot see or control. Boundaries that can lead to no tangible sense of defined scope, role, or orientation.
 
-Ithaca addresses aims to move AI agent interactions one-level up; at the brief-level, before users interact at the prompt-level.
+Ithaca aims to move AI agent interactions one-level up; at the brief-level, before users interact at the prompt-level.
 
 ---
 
