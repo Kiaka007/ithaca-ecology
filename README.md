@@ -2,7 +2,7 @@
 
 **A context-first, ritual-based computing ecology for knowledge workers.**
 
-Ithaca is a filesystem structure built in Linux that combines principles of Contextual Integrity with adventure game conventions. It gives structure to how you work, where things live, and how an AI collaborator like Claude Code orients itself within your environment so that you do not have to rely on a single-loaded chat session to hold everything together.
+Ithaca is a filesystem structure built in Linux that combines principles of Contextual Integrity (Nissenbaum) with adventure game conventions. It gives structure to how you work, where things live, and how an AI collaborator like Claude Code orients itself within your environment so that you do not have to rely on a single-loaded chat session to hold everything together.
 
 [**Watch the lightning talk**](https://drive.google.com/file/d/1ptLeZKH-uczsZZVZpRc-wOxfyQdoxnzH/view?usp=drive_link) *(7 min, OpenMined Retreat, April 2026)*
 
